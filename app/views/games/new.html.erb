@@ -1,7 +1,17 @@
+<div class="container">
 <h1>New Games</h1>
-<ul class="inline container">
+<ul class="inline my-5">
   <% @letters.each do |letter| %>
     <li class="tile"><%= letter %></li>
   <% end %>
 </ul>
 
+<form action="/score" class="">
+  <label for="word">What is the longest word you can find?</label>
+  <div class="d-flex">
+    <input type="text" name="word" value="<%= params[:word] %>" class="form-control">
+    <input type="submit" class="btn border" value="Play">
+  </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+</div>

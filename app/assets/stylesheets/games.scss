@@ -1,13 +1,17 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.container {
+
+
+body {
   width: 900px;
+  margin-top: 24px;
 }
 
 .inline {
   display: flex;
   justify-content: space-around;
+  list-style: none;
 }
 
 .tile {
@@ -15,6 +19,8 @@
   color: white;
   font-weight: 700;
   background-color: #3598DB;
-  padding: 8px 16px;
+  padding: 8px 0;
+  width: 54px;
+  text-align: center;
   box-shadow: 2px 2px 4px #999999;
 }

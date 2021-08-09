@@ -7,3 +7,4 @@ class GamesController < ApplicationController
   def score
   end
 end
+
